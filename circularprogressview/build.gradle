@@ -23,15 +23,15 @@ android {
     }
 }
 
-def siteUrl = 'https://github.com/liyuhaolol/LightImmersionMode'
+def siteUrl = 'https://github.com/liyuhaolol/CircularProgressView'
 
-def gitUrl = 'https://github.com/liyuhaolol/LightImmersionMode.git'
+def gitUrl = 'https://github.com/liyuhaolol/CircularProgressView.git'
 
-def libName = 'LightImmersionMode'
+def libName = 'CircularProgressView'
 
 group = "spa.lyh.cn"
 
-version = "1.0.7"
+version = "2.5.1"
 
 task sourcesJar(type: Jar) {
     from android.sourceSets.main.java.srcDirs
@@ -109,7 +109,7 @@ bintray{
     }
 }
 
-javadoc {
+/*javadoc {
     options{
         //如果你的项目里面有中文注释的话，必须将格式设置为UTF-8，不然会出现乱码
         encoding "UTF-8"
@@ -118,7 +118,7 @@ javadoc {
         version true
         links "http://docs.oracle.com/javase/7/docs/api"
     }
-}
+}*/
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
