@@ -22,9 +22,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-/**
- * TODO: document your custom view class.
- */
+
 public class CircularProgressView extends View {
 
     private static final float INDETERMINANT_MIN_SWEEP = 15f;
