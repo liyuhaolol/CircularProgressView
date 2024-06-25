@@ -1,20 +1,25 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 30
+    namespace 'spa.lyh.cn.circularprogressview'
+    compileSdk 35
     defaultConfig {
         applicationId "spa.lyh.cn.circularprogressview"
-        minSdkVersion 19
-        targetSdkVersion 30
+        minSdk 19
+        targetSdk 35
         versionCode 1
         versionName "1.0"
-        testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
     }
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
     }
 }
 
